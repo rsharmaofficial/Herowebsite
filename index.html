@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh Hero</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo Bhai', cursive;
+
+        }
+
+        #navbar {
+            background-color: rgb(240, 230, 230);
+            border: 2px solid grey;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            /* display:contents; */
+            position: fixed;
+            /* border-radius: 30px; */
+            /* margin-top: 5px; */
+            width: 100%;
+        }
+
+        #navbar h1 {
+            text-align: center;
+            display: flex;
+            font-size: 30px;
+            color: red;
+            padding: 13px;
+
+        }
+
+        /* #navbar::before {
+            content: "";
+            background-color: rgba(255, 255, 255, 0.415);
+            position:absolute;
+            border-radius: 10px;
+            display: flex;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        } */
+
+        #navbar img {
+            height: 75px;
+            width: 150px;
+
+        }
+        #navbar li{
+            text-decoration: none;
+            display: flex;
+            display: inline-block;
+            margin-left: 7rem;
+            text-align: center;
+        }
+        #navbar li a{
+            padding: 23px;
+            font-size: 20px;
+            display: flex;
+            color: grey;
+            text-decoration: none;
+            
+        }
+
+        #navbar img:hover {
+            height: 80px;
+            width: 150px;
+        }
+
+
+        #navbar li a:hover {
+            color: black;
+            /* background-color: rgb(210, 60, 60); */
+            /* border-radius: 30px; */
+            text-decoration: none;
+            /* background-color: red; */
+        }
+
+        /* for home bar */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 403px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            /* background: url("https://scontent.flko4-1.fna.fbcdn.net/v/t1.18169-9/12814567_907943272636490_3436912807980395310_n.png?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_ohc=fYN_gSSlJjAAX9IIQNj&_nc_ht=scontent.flko4-1.fna&oh=00_AfDz-40UGtB3nRrlj8OzPGvb9qU6LUURHduAUh2zcVdfzw&oe=64EE23B9") no-repeat center center/cover;
+            position: relative; */
+            height: 65%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #home h1 {
+            font-size: 40px;
+            padding-top: 129px;
+
+        }
+
+        #home p {
+            color: black;
+            font-size: 1.2rem;
+            padding: 16px;
+        }
+
+        /* button design under home */
+        .btn {
+            padding: 10px;
+            border: 2px solid white;
+            color: white;
+            background-color: grey;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 20px;
+            /* margin: 50px; */
+            width: 80px
+        }
+
+        .btn:hover {
+            width: 200px;
+            font-size: 30px;
+
+        }
+
+        /* service section */
+        #services {
+            margin-top: 87px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid brown;
+            padding: 38px;
+            margin: 2px 15px;
+            border-radius: 28px;
+            background: #f2f2f2;
+            margin-bottom: 20px;
+            /* height:20px; */
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+
+        }
+
+
+
+        /* Utility classes */
+
+        .h-primary {
+            font-size: 3.0rem;
+            text-align: center;
+            margin: 100px;
+            padding: 0px;
+        }
+
+        .h-secondary {
+            font-size: 2rem;
+        }
+
+        /* Contact Section */
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80') no-repeat center center/cover;
+
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+
+        }
+
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+        /* Utility Classes */
+        .h-primary {
+            font-family: 'Bree Serif', serif;
+            font-size: 3.8rem;
+            padding: 10px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 2.3rem;
+            padding: 0px;
+        }
+
+        /* .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            justify-content: center;
+
+        } */
+
+        .center {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="https://www.logo.wine/a/logo/Hero_MotoCorp/Hero_MotoCorp-Logo.wine.svg" alt="Rishabh Hero">
+            <h1>Rishabh Hero</h1>
+            <!-- <button id="toggleBtn">&#9776;</button> -->
+            <ul>
+                <li class="item"><a href="./index.html">Home</a></li>
+                <li class="item"><a href="https://www.heromotocorp.com/en-in.html">Explore</a></li>
+                <li class="item"><a href="./About.html">About us</a></li>
+                <li class="item"><a href="./contact detail.html">Contact</a></li>
+                <li class="item"><a href="./join us.html">Join us</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h1 class="h-primary"> Welcome to Rishabh Automobiles </h1>
+            <p>Discover Rishabh Automobiles, your trusted Hero MotoCorp company since 2004. Immerse yourself in our
+                modern showroom, offering an exquisite selection of Hero MotoCorp bikes, tailored to your preferences.
+                Our dedicated sales team provides top-notch service, guiding you to find your perfect match. With
+                genuine spare parts and expert technicians at our advanced service center, we ensure your bike runs
+                flawlessly. Join our vibrant community of riders, participating in thrilling events and unforgettable
+                rides. Fuel your passion for biking with Rishabh Automobiles, where dreams come true on two wheels.
+                Experience the joy of riding with us habh your ultimate destination for Hero MotoCorp excellence.</p>
+            <button class="btn"> <a href="#">Submit</a></button>
+        </section>
+        <section class="section-container">
+            <h1 class="h-primary center">Our services </h1>
+            <div id="services">
+                <div class="box">
+                    <img src="https://w7.pngwing.com/pngs/1006/148/png-transparent-sales-eid-sale-label-text-rectangle-thumbnail.png"
+                        alt="">
+                    <h2 class="h-secondary center">Sales</h2>
+                    <p>Discover the art of content writing—craft compelling, informative, and inspiring narratives. Hone
+                        your skills, connect with fellow writers, and make an impact with your words on our engaging
+                        platform.</p>
+                </div>
+                <div class="box">
+                    <img src="https://www.seekpng.com/png/detail/299-2992497_manufacturing-icons-02-service-icon-png-black.png"
+                        alt="">
+                    <h2 class="h-secondary center">Service</h2>
+                    <p>Discover the art of content writing—craft compelling, informative, and inspiring narratives. Hone
+                        your skills, connect with fellow writers, and make an impact with your words on our engaging
+                        platform.</p>
+                </div>
+                <div class="box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4881/4881142.png" alt="">
+                    <h2 class="h-secondary center">Spare</h2>
+                    <p>Discover the art of content writing—craft compelling, informative, and inspiring narratives. Hone
+                        your skills, connect with fellow writers, and make an impact with your words on our engaging
+                        platform.</p>
+                </div>
+        </section>
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="name" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number: </label>
+                        <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn"> <a href="./abcd.txt">Submit</a></button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                Copyright &copy; www.rishabhhero. All rights reserved!
+            </div>
+        </footer>
+    </header>
+
+</body>
+
+</html>
